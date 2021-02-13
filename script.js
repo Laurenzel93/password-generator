@@ -49,9 +49,13 @@ function generatePassword() {
     console.log(masterArray);
   }
 
+    for (let i = 0; i < passwordLength; i++); {
+      randomPassword += Math.floor(Math.random() * (max - min) + min);
+    }
+    
 // make master array
 // get random thing from master array
-// put random thing onto password variable
+// put random thing into password variable
 
 return masterArray;
 }
