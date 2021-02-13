@@ -15,6 +15,7 @@ let lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 let upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 let numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 let masterArray = [];
+let randomPassword = "";
 
 
 // Add event listener to generate button
@@ -48,15 +49,21 @@ function generatePassword() {
     masterArray += specialCharacters;
     console.log(masterArray);
   }
+  let randomPassword = " ";
 
-    for (let i = 0; i < passwordLength; i++); {
-      randomPassword += Math.floor(Math.random() * (max - min) + min);
-    }
-    
-// make master array
-// get random thing from master array
-// put random thing into password variable
+  //for (let i = 0; i < passwordLength; i++); {
+    //randomPassword += Math.floor(Math.random() * (masterArray.length - 0) + 0);
 
-return masterArray;
-}
-let randomPassword = " ";
+    for (let i = 0; i < passwordLength; i++) {
+      randomPassword += masterArray[Math.floor(Math.random() * (masterArray.length))];
+      console.log(Math.floor(Math.random() * (masterArray.length)));
+      console.log(randomPassword);        
+      }
+   return randomPassword;
+  }
+
+  // make master array
+  // get random thing from master array
+  // put random thing into password variable
+
+  //return masterArray;
