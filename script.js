@@ -27,25 +27,25 @@ function generatePassword() {
   }
   let useLowerCase = confirm("Do you want your new password to include lowercase letters?");
   if (useLowerCase === true) {
-    masterArray += useLowerCase;
+    masterArray += lowerCase;
     console.log(masterArray);
   }
 
   let useUpperCase = confirm("Do you want your new password to include uppercase letters?");
   if (useUpperCase === true) {
-    masterArray += useUpperCase;
+    masterArray += upperCase;
     console.log(masterArray);
   }
 
   let useNumbers = confirm("Do you want your new password to include numbers?");
   if (useNumbers === true) {
-    masterArray += useNumbers;
+    masterArray += numbers;
     console.log(masterArray);
   }
 
   let useSpecialCharacters = confirm("Do you want your new password to include special characters?");
   if (useSpecialCharacters === true) {
-    masterArray += useSpecialCharacters;
+    masterArray += specialCharacters;
     console.log(masterArray);
   }
 
