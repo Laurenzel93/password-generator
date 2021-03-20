@@ -1,4 +1,4 @@
-# Workday-Scheduler
+# Password Generator
 
 Deployed Link: laurenzel93.github.io/password-generator/ <br>
 Repo Link: github.com/Laurenzel93/password-generator <br>
