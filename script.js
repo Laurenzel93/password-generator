@@ -1,10 +1,10 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
+let generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  let password = generatePassword();
+  let passwordText = document.querySelector("#password");
   console.log(passwordText.value);
   passwordText.value = password;
   console.log(passwordText.value);
@@ -24,9 +24,10 @@ function generatePassword() {
   randomPassword = ""; // This ensures that the generated password is cleared on every new button click
 
   let passwordLength = prompt("Please enter the number of characters you want for you new password. It may be between 8 and 128 characters.");
-  if (!passwordLength || passwordLength <= 7 || passwordLength >= 129) {
+  if (!passwordLength || passwordLength <= 7 || passwordLength >= 129 || isNaN(passwordLength)) {
     return alert("Invalid Response. Please try again."); // ensures if no response or incorrect responses are not accepted
   }
+
   let useLowerCase = confirm("Do you want your new password to include lowercase letters?");
   if (useLowerCase === true) {
     masterArray = masterArray.concat(lowerCase);
